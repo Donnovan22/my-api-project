@@ -1,0 +1,21 @@
+{
+  "name": "my-api-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Donnovan22/my-api-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Donnovan22/my-api-project/issues"
+  },
+  "homepage": "https://github.com/Donnovan22/my-api-project#readme"
+}
