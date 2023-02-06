@@ -1,0 +1,21 @@
+[
+    {
+        "firstName": "Joanne",
+        "lastName": "Rowling",
+        "birthday": "07/31/1965",
+        "nationality": "British"
+    },
+    {
+        "firstName": "Robert",
+        "lastName": "Kiyosaki",
+        "birthday": "04/08/1947",
+        "nationality": "American"
+      
+    },
+    {
+        "firstName": "James",
+        "lastName": "Clear",
+        "birthday": "01/22/1986",
+        "nationality": "American"
+    }
+]

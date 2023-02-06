@@ -1,0 +1,62 @@
+// LOCAL HOST //
+
+###
+GET http://localhost:3000/books
+###
+GET http://localhost:3000/authors
+
+
+// CREATE AUTHOR
+###
+POST http://localhost:3000/authors
+content-type: application/json
+
+{
+    "firstName": "Joanne",
+    "lastName": "Rowling",
+    "birthday": "07/31/1965",
+    "nationality": "British"
+}
+
+// CREATE BOOK 
+
+POST http://localhost:3000/books
+content-type: application/json
+
+{
+    "title": "Harry Potter Philosopher's Stone",
+    "author": "Joanne Rowling",
+    "releaseDay": "06/26/1997",
+    "genre": "Fantasy"
+}
+
+// *** PRODUCTION DEPLOY *** //
+
+###
+GET https://cse-341-donnovan.onrender.com/books
+###
+GET https://cse-341-donnovan.onrender.com/authors
+
+// CREATE AUTHOR
+###
+POST https://cse-341-donnovan.onrender.com/authors
+content-type: application/json
+
+{
+    "firstName": "Joanne",
+    "lastName": "Rowling",
+    "birthday": "07/31/1965",
+    "nationality": "British"
+}
+
+// CREATE BOOK 
+
+POST https://cse-341-donnovan.onrender.com/books
+content-type: application/json
+
+{
+    "title": "Harry Potter Philosopher's Stone",
+    "author": "Joanne Rowling",
+    "releaseDay": "06/26/1997",
+    "genre": "Fantasy"
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Harry Potter Philosopher's Stone",
+        "author": "Joanne Rowling",
+        "releaseDay": "06/26/1997",
+        "genre": "Fantasy"
+    },
+    {
+        "title": "Rich Dad Poor Dad",
+        "author": "Robert Kiyosaki",
+        "releaseDay": "1997",
+        "genre": "Finance"
+    },
+    {
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "releaseDay": "10/16/2022",
+        "genre": "Self-help"
+    }
+]
