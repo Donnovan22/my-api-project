@@ -16,8 +16,8 @@ const getAll = async (req, res) => {
 
 const getSingle = async (req, res) => {
   try {
-    const userId = new ObjectId(req.params.id);
-    const result = await mongodb.getDb().db().collection('authors').find({ _id: userId });
+    const authorId = new ObjectId(req.params.id);
+    const result = await mongodb.getDb().db().collection('authors').find({ _id: authorId });
     result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists[0]);
@@ -49,7 +49,7 @@ const addAuthor = async (req, res) => {
 
 const updateAuthor = async (req, res) => {
   try {
-    const userId = new ObjectId(req.params.id);
+    const authorId = new ObjectId(req.params.id);
   // be aware of updateOne if you only want to update specific fields
   const author = {
     firstName: req.body.firstName,
@@ -61,7 +61,7 @@ const updateAuthor = async (req, res) => {
     .getDb()
     .db()
     .collection('authors')
-    .replaceOne({ _id: userId }, author);
+    .replaceOne({ _id: authorId }, author);
   console.log(response);
   if (response.modifiedCount > 0) {
     res.status(200).send({
@@ -78,12 +78,12 @@ const updateAuthor = async (req, res) => {
 
 const deleteAuthor = async (req, res) => {
   try {
-    const userId = new ObjectId(req.params.id);
+    const authorId = new ObjectId(req.params.id);
     const response = await mongodb
       .getDb()
       .db()
       .collection('authors')
-      .deleteOne({ _id: userId }, true);
+      .deleteOne({ _id: authorId }, true);
     console.log(response);
     if (response.deletedCount > 0) {
       res.status(200).send({
