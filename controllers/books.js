@@ -47,7 +47,7 @@ const addBook = async (req, res) => {
   }
 };
 
-const updateBook = async (req, res) => {
+/*const updateBook = async (req, res) => {
   try {
     const bookId = new ObjectId(req.params.id);
   // be aware of updateOne if you only want to update specific fields
@@ -95,6 +95,12 @@ const deleteBook = async (req, res) => {
   } catch (error) {
     res.status(500).json(error);
   }
-};
+};*/
 
-module.exports = { getAll, getSingle, addBook, updateBook, deleteBook };
+module.exports = {
+    getAll,
+    getSingle,
+    addBook, 
+    //updateBook,
+   // deleteBook
+};

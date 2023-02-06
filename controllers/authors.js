@@ -47,7 +47,7 @@ const addAuthor = async (req, res) => {
   }
 };
 
-const updateAuthor = async (req, res) => {
+/*const updateAuthor = async (req, res) => {
   try {
     const authorId = new ObjectId(req.params.id);
   // be aware of updateOne if you only want to update specific fields
@@ -95,6 +95,12 @@ const deleteAuthor = async (req, res) => {
   } catch (error) {
     res.status(500).json(error);
   }
-};
+};*/
 
-module.exports = { getAll, getSingle, addAuthor, updateAuthor, deleteAuthor };
+module.exports = {
+    getAll,
+    getSingle,
+    addAuthor,
+    //updateAuthor,
+    //deleteAuthor
+};

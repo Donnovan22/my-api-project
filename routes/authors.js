@@ -9,8 +9,8 @@ router.get('/:id', authorsController.getSingle);
 
 router.post('/', authorsController.addAuthor);
 
-router.put('/:id', authorsController.updateAuthor);
+//router.put('/:id', authorsController.updateAuthor);
 
-router.delete('/:id', authorsController.deleteAuthor);
+//router.delete('/:id', authorsController.deleteAuthor);
 
 module.exports = router;
