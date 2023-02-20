@@ -22,6 +22,20 @@
         }
       }
     },
+    "/auth/": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/auth/oauth-callback": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
     "/books/": {
       "get": {
         "description": "",
