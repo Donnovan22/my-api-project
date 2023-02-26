@@ -1,18 +1,19 @@
 const express = require('express');
+const { requiresAuth } = require('express-openid-connect');
 const router = express.Router();
 
 const authorsController = require('../controllers/authors');
 const validation = require('../middleware/validate');
 
 
-router.get('/', authorsController.getAll);
+router.get('/', requiresAuth(), authorsController.getAll);
 
-router.get('/:id', authorsController.getSingle);
+router.get('/:id', requiresAuth(), authorsController.getSingle);
 
-router.post('/', validation.saveAuthor, authorsController.addAuthor);
+router.post('/', requiresAuth(), validation.saveAuthor, authorsController.addAuthor);
 
-router.put('/:id',  validation.saveAuthor, authorsController.updateAuthor);
+router.put('/:id',  requiresAuth(), validation.saveAuthor, authorsController.updateAuthor);
 
-router.delete('/:id', authorsController.deleteAuthor);
+router.delete('/:id', requiresAuth(), authorsController.deleteAuthor);
 
 module.exports = router;

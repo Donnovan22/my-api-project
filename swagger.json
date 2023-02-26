@@ -10,6 +10,13 @@
   "schemes": [
     "https"
   ],
+  "securityDefinitions": {
+    "oAuthSample": {
+      "type": "oauth2",
+      "authorizationUrl": "https://books-api-rhr3.onrender.com/login",
+      "flow": "authorizationCode"
+    }
+  },
   "paths": {
     "/": {
       "get": {
@@ -20,20 +27,6 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/auth/": {
-      "get": {
-        "description": "",
-        "parameters": [],
-        "responses": {}
-      }
-    },
-    "/auth/oauth-callback": {
-      "get": {
-        "description": "",
-        "parameters": [],
-        "responses": {}
       }
     },
     "/books/": {
