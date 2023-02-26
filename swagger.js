@@ -5,6 +5,13 @@ const doc = {
     title: 'Books API',
     description: '',
   },
+  securityDefinitions: {
+    oAuthSample: {
+      type: 'oauth2',
+      authorizationUrl: 'https://books-api-rhr3.onrender.com/login',
+      flow: 'authorizationCode'
+    }
+  },
   host: 'books-api-rhr3.onrender.com',
   schemes: ['https'],
 };
